@@ -1,0 +1,41 @@
+{% load static %}
+{% load socialaccount %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Login</title>
+    <link rel="stylesheet" href="{% static 'css/loginpage.css' %}">
+    <link rel="icon" href="{% static 'images/favicon.png' %}" type="image/x-icon">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form method="POST">
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                <a href="#">Forgot Password?</a>
+            </div>
+            <button type="submit" class="btn">Login</button>
+            <!-- <button type="button" class="btn google-btn"> -->
+                <div class="media-option">
+                    <a href="{% provider_login_url 'google' %}" class="google-login-btn">
+                      <i class="fa-brands fa-google googleicon"></i>
+                      <span>Sign in with Google</span>
+                    </a>
+                  </div>
+                  
+        </form>
+        <div class="signup-link">
+            Don't have an account? <a href="signup">Sign Up</a>
+        </div>
+    </div>
+</body>
+</html>

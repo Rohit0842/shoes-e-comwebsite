@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<link rel="stylesheet" href="{% static 'css/home.css' %}">
+
+<!-- Main Content and Sidebar -->
+<div class="main-container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <h3>Dashboard</h3>
+        <ul>
+            <li><a href="#" class="menu-item">Home</a></li>
+            <li><a href="/products" class="menu-item">Products</a></li>
+            <li><a href="#" class="menu-item">Orders</a></li>
+            <li><a href="#" class="menu-item">Users</a></li>
+        </ul>
+    </aside>
+
+    <!-- Banners Section -->
+    <div class="content">
+        <!-- Banner 1 -->
+        <section class="banner" id="banner-1">
+            <img src="/static/images/banner.jpg" alt="Exclusive Deals Banner">
+            <div class="banner-text">
+                <h2>Exclusive Deals</h2>
+                <p>Shop now and save up to 50% on your favorite products</p>
+                <a href="#" class="btn">Shop Now</a>
+            </div>
+        </section>
+
+        <!-- Banner 2 -->
+        <section class="banner" id="banner-2">
+            <img src="/static/images/banner2.jpg" alt="Winter Collection">
+            <div class="banner-text">
+                <h2>Winter Collection</h2>
+                <p>Stay warm and stylish with our new collection</p>
+                <a href="#" class="btn">Shop Winter Collection</a>
+            </div>
+        </section>
+
+        <!-- Banner 3 -->
+        <section class="banner" id="banner-3">
+            <img src="/static/images/banner3.jpg" alt="Flash Sale">
+            <div class="banner-text">
+                <h2>Flash Sale!</h2>
+                <p>Hurry! Get up to 70% off on selected items</p>
+                <a href="#" class="btn">Shop Now</a>
+            </div>
+        </section>
+
+        <!-- Banner 4 -->
+        <section class="banner" id="banner-4">
+            <img src="/static/images/banner4.jpg" alt="Limited Time Offer">
+            <div class="banner-text">
+                <h2>Limited Time Offer</h2>
+                <p>Grab your favorites before they're gone</p>
+                <a href="#" class="btn">Shop Now</a>
+            </div>
+        </section>
+    </div>
+</div>
+
+
+{% endblock %}
+

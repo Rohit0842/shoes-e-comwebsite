@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+
+
+ <!-- Sidebar -->
+<div class="dashsidebar">
+    <div class="logo">
+        <h2>Dashboard</h2>
+    </div>
+    <ul class="dashmenu">
+        <li><a href="#" class="menu-item">Home</a></li>
+        <li><a href="/products" class="menu-item">Products</a></li>
+        <li><a href="#" class="menu-item">Orders</a></li>
+        <li><a href="#" class="menu-item">Users</a></li>
+    </ul>
+</div>
+
+<!-- Main Content -->
+<div class="dashmain-content">
+    <h1>Dashboard</h1>
+    
+    <!-- Top 10 Selling Products -->
+    <div class="dashsection">
+        <h2>Top 10 Selling Products</h2>
+        <table>
+            <tr>
+                <th>Product Name</th>
+                <th>Sales</th>
+            </tr>
+            <tr><td>Product 1</td><td>1500</td></tr>
+            <tr><td>Product 2</td><td>1200</td></tr>
+            <tr><td>Product 3</td><td>1100</td></tr>
+            <tr><td>Product 4</td><td>1050</td></tr>
+            <tr><td>Product 5</td><td>950</td></tr>
+            <tr><td>Product 6</td><td>850</td></tr>
+            <tr><td>Product 7</td><td>750</td></tr>
+            <tr><td>Product 8</td><td>700</td></tr>
+            <tr><td>Product 9</td><td>600</td></tr>
+            <tr><td>Product 10</td><td>500</td></tr>
+        </table>
+    </div>
+
+    <!-- Top 10 Buyers -->
+    <div class="dashsection">
+        <h2>Top 10 Buyers</h2>
+        <table>
+            <tr>
+                <th>Buyer Name</th>
+                <th>Total Spend</th>
+            </tr>
+            <tr><td>Buyer 1</td><td>₹5000</td></tr>
+            <tr><td>Buyer 2</td><td>₹4500</td></tr>
+            <tr><td>Buyer 3</td><td>₹4200</td></tr>
+            <tr><td>Buyer 4</td><td>₹4000</td></tr>
+            <tr><td>Buyer 5</td><td>₹3800</td></tr>
+            <tr><td>Buyer 6</td><td>₹3500</td></tr>
+            <tr><td>Buyer 7</td><td>₹3300</td></tr>
+            <tr><td>Buyer 8</td><td>₹3100</td></tr>
+            <tr><td>Buyer 9</td><td>₹2900</td></tr>
+            <tr><td>Buyer 10</td><td>₹2700</td></tr>
+        </table>
+    </div>
+</div>
+{% endblock %}
+

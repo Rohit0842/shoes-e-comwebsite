@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/products">Home</a></li>
+                <!-- <li><a href="/orders">Order History</a></li>
+                <li><a href="/account">Account</a></li> -->
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="orders-history">
+            <h1>Your Orders</h1>
+
+            <!-- Example Order 1 -->
+            <div class="order-card">
+                <div class="order-image">
+                    <img src="static/images/shoes10.jpg" alt="Product Image">
+                </div>
+                <div class="order-info">
+                    <p><strong>Order ID:</strong> #123456</p>
+                    <p><strong>Date:</strong> 12 Dec, 2024</p>
+                    <p><strong>Status:</strong> Delivered</p>
+                </div>
+                <div class="order-actions">
+                    <button class="btn-track">Track Order</button>
+                    <button class="btn-return">Return Order</button>
+                    <button class="btn-details">View Details</button>
+                </div>
+            </div>
+
+            <!-- Example Order 2 -->
+            <div class="order-card">
+                <div class="order-image">
+                    <img src="static/images/shoes9.jpg" alt="Product Image">
+                </div>
+                <div class="order-info">
+                    <p><strong>Order ID:</strong> #123457</p>
+                    <p><strong>Date:</strong> 5 Dec, 2024</p>
+                    <p><strong>Status:</strong> In Transit</p>
+                </div>
+                <div class="order-actions">
+                    <button class="btn-track">Track Order</button>
+                    <button class="btn-return">Return Order</button>
+                    <button class="btn-details">View Details</button>
+                </div>
+            </div>
+
+            <!-- Example Order 3 -->
+            <div class="order-card">
+                <div class="order-image">
+                    <img src="static/images/shoes5.jpg" alt="Product Image">
+                </div>
+                <div class="order-info">
+                    <p><strong>Order ID:</strong> #123458</p>
+                    <p><strong>Date:</strong> 1 Dec, 2024</p>
+                    <p><strong>Status:</strong> Delivered</p>
+                </div>
+                <div class="order-actions">
+                    <button class="btn-track">Track Order</button>
+                    <button class="btn-return">Return Order</button>
+                    <button class="btn-details">View Details</button>
+                </div>
+            </div>
+        </section>
+    </main>
+{% endblock %}

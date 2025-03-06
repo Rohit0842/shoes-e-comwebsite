@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/users.css' %}">
+  <main class="profile-container">
+    <div class="profile-sidebar">
+      <h2>User Profile</h2>
+      <ul>
+        <li><a href="#">Personal Information</a></li>
+        <li><a href="#">Order History</a></li>
+        <li><a href="#">Change Password</a></li>
+        <li><a href="#">Log Out</a></li>
+      </ul>
+    </div>
+
+    <div class="profile-details">
+      <section class="profile-info">
+        <h2>Personal Information</h2>
+        <div class="user-info">
+          <p><strong>Name:</strong> John Doe</p>
+          <p><strong>Email:</strong> john.doe@example.com</p>
+          <p><strong>Address:</strong> 1234 Main Street, City, Country</p>
+        </div>
+        <button class="edit-btn">Edit Profile</button>
+      </section>
+
+      <section class="order-history">
+        <h2>Order History</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Order ID</th>
+              <th>Product</th>
+              <th>Price</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>#1234</td>
+              <td>Wireless Headphones</td>
+              <td>₹100</td>
+              <td>Delivered</td>
+            </tr>
+            <tr>
+              <td>#5678</td>
+              <td>Smartphone</td>
+              <td>₹599</td>
+              <td>Shipped</td>
+            </tr>
+            <tr>
+              <td>#9101</td>
+              <td>Laptop</td>
+              <td>₹1200</td>
+              <td>Delivered</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </div>
+</main>
+{% endblock %}

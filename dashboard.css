@@ -1,0 +1,82 @@
+/* Sidebar Styles */
+.dashsidebar {
+    width: 200px;
+    background-color: #232f3e;
+    color: white;
+    height: 100vh;
+    position: absolute;
+    padding: 20px;
+  }
+  
+  .dashsidebar .logo h2 {
+    font-size: 24px;
+    color: white;
+  }
+  
+  .dashsidebar .dashmenu {
+    list-style-type: none;
+    padding: 20px 0;
+  }
+  
+  .dashsidebar .dashmenu li {
+    margin: 15px 0;
+  }
+  
+  .dashsidebar .dashmenu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  .dashsidebar .dashmenu li a:hover {
+    background-color: #4CAF50;
+    padding-left: 10px;
+  }
+  
+  /* Main Content Styles */
+  .dashmain-content {
+    margin-left: 270px;
+    padding: 20px;
+    flex-grow: 1;
+  }
+  
+  .dashmain-content h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  .dashsection {
+    margin-bottom: 40px;
+  }
+  
+  .dashsection h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+  }
+  
+  table th,
+  table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  table th {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  table tr:hover {
+    background-color: #f1f1f1;
+  }
+

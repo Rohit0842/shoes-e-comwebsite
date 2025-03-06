@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #232f3e;
+    color: white;
+    padding: 10px 20px;
+}
+
+.header .logo img{
+    width: 30px;  
+    height: auto;  
+}
+
+.header .search-bar {
+    flex-grow: 1;
+    margin: 0 20px;
+    display: flex;
+}
+
+.header .search-bar input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+}
+
+.header .search-bar button {
+    padding: 10px 15px;
+    background-color: #febd69;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+.header .nav-links {
+    display: flex;
+    align-items: center;
+    z-index: 5;
+}
+
+.header .nav-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 14px;
+    z-index: 5;
+}
+
+.header .nav-links a:hover {
+    text-decoration: underline;
+}
+
+.header .user-account {
+    position: relative;
+}
+
+.header .user-account:hover .dropdown {
+    display: block;
+}
+
+.header .user-account .dropdown {
+    display: none;
+    position: fixed;
+    top: 40px;
+    right: 18px;
+    background-color: #febd69;
+    color: black;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    overflow: hidden;
+    z-index: 5;
+}
+
+.header .user-account .dropdown a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+
+.header .user-account .dropdown a:hover {
+    background-color: #f3f3f3;
+}
+
+
+
+
+
+
+
+
+
+
+

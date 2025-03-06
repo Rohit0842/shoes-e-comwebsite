@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Dashboard</title>
+    <link rel="icon" href="/static/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/static/css/header.css">
+    <link rel="stylesheet" href="/static/css/products.css">
+    <link rel="stylesheet" href="/static/css/footer.css">
+    <link rel="stylesheet" href="/static/css/Dashboard.css">
+    <link rel="stylesheet" href="{% static 'css/orders.css' %}">
+    <link rel="stylesheet" href="{% static 'css/deals.css' %}">
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <div class="logo">
+            <a href="/products">
+              <img src="/static/images/favicon.png" alt="Wolf Logo"  />
+            </a>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search for products...">
+            <datalist id="input"></datalist>
+            <button>Search</button>
+        </div> 
+        <div class="nav-links">
+            <a href="deals">Deals</a>
+            <a href="/orders">Orders</a>
+            <a href="/checkout">Cart</a>
+        </div>
+          <div class="user-account">
+            <a >Account</a>
+            <div class="dropdown">
+                <a href="users">Profile</a>
+                <form method="POST" action="{% url 'logout_user' %}">
+                    {% csrf_token %}
+                    <a href="logout" class="logout-btn">Logout</a>
+                 </form>
+            </div>
+        </div>
+     
+    </div>

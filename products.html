@@ -1,0 +1,99 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="dashsidebar">
+    <div class="logo">
+        <h2>Dashboard</h2>
+    </div>
+    <ul class="dashmenu">
+        <li><a href="/home">Home</a></li>
+        <li><a href="/products">Products</a></li>
+        <li><a href="orders">Orders</a></li>
+        <li><a href="dashboard">Users</a></li>
+    </ul>
+</div>
+
+<div class="main-content">
+    <section class="products">
+        <h2  id="animated_div">Top selling shoes</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="static/images/shoes1.png" alt="wolf shoes">
+                <h3>wolf shoes</h3>
+                <p>₹470.00</p>
+                <button>Buy now</button>
+            </div>
+            <div class="product-card">
+                <img src="/static/images/shoes2.jpg" alt="sports shoes">
+                <h3>sports shoes</h3>
+                <p>₹600.00</p>
+                <button>Buy now</button>
+            </div>
+            <div class="product-card">
+                <img src="/static/images/shoes3.jpg" alt="wolf shoes">
+                <h3>wolf shoes</h3>
+                <p>₹950.00</p>
+                <button>Buy now</button>
+            </div>
+            <div class="product-card">
+                <img src="/static/images/shoes4.jpg" alt="wolf shoes">
+                <h3>wolf shoes</h3>
+                <p>₹800.00</p>
+                <button>Buy now</button>
+            </div>
+            <div class="product-card">
+                <img src="/static/images/shoes5.jpg" alt="wolf shoes">
+                <h3>wolf shoes</h3>
+                <p>₹470.00</p>
+                <button>Buy now</button>
+            </div>
+            <div class="product-card">
+                <img src="/static/images/shoes6.jpg" alt="wolf shoes">
+                <h3>wolf shoes</h3>
+                <p>₹1200.00</p>
+                <button>Buy now</button>
+            </div>
+            <div class="product-card">
+                <img src="/static/images/shoes11.jpg" alt="wolf shoes">
+                <h3>wolf shoes</h3>
+                <p>₹1200.00</p>
+                <button>Buy now</button>
+            </div>
+            <div class="product-card">
+                <img src="/static/images/shoes12.jpg" alt="wolf shoes">
+                <h3>wolf shoes</h3>
+                <p>₹1200.00</p>
+                <button>Buy now</button>
+            </div>
+        </div>
+    </section>
+    <section class="products">
+        <h2>Best Product</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="static/images/shoes7.jpg" alt="adi shoes">
+                <h3>adi sneaker</h3>
+                <p>₹1770.00</p>
+                <button>Buy now</button>
+            </div>
+            <div class="product-card">
+                <img src="static/images/shoes8.jpg" alt="Nike Shoes">
+                <h3>Nike Shoes</h3>
+                <p>₹1200.00</p>
+                <button>Buy now</button>
+            </div>
+            <div class="product-card">
+                <img src="static/images/shoes9.jpg" alt="rebo Shoes">
+                <h3>rebo Sneaker</h3>
+                <p>₹1280.00</p>
+                <button>Buy now</button>
+            </div>
+            <div class="product-card">
+                <img src="static/images/shoes10.jpg" alt="puma Shoes">
+                <h3>puma sneaker</h3>
+                <p>₹1500.00</p>
+                <button>Buy now</button>
+            </div>
+    </section>
+</div>
+{% endblock %}

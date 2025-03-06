@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Placed Successfully</title>
+    <link rel="stylesheet" href="{% static 'css/ordersucess.css'%}">
+    <link rel="stylesheet" href="/static/css/footer.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Thank You for Shopping!</h1>
+        <h4>Your order id is {{123456}}</h2>
+        <p>Your order has been placed successfully.</p>
+        <p>We appreciate your business and hope you enjoy your purchase.</p>
+        <p>For any queries, feel free to contact our support team.</p>
+        <a href="/products" class="button">Return to Home</a>
+    </div>
+</body>
+</html>
+{% include 'footer.html'%}

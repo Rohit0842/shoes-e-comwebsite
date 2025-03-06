@@ -1,0 +1,147 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    background: #ffffff;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.form-group a {
+    display: block;
+    margin-top: 5px;
+    font-size: 12px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.form-group a:hover {
+    text-decoration: underline;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.google-btn {
+    background-color: #db4437;
+    margin-top: 10px;
+}
+
+.google-btn:hover {
+    background-color: #a33426;
+}
+
+.signup-link {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.signup-link a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+
+/* media option google */
+
+/* Basic styling */
+.media-option {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .google-login-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #db4437; /* Google's red color */
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  .google-login-btn i {
+    margin-right: 10px; /* Space between icon and text */
+    font-size: 1.5rem;
+  }
+  
+  .google-login-btn:hover {
+    background-color: #c1351d; /* Slightly darker red on hover */
+  }
+  
+  /* Responsive styling */
+  @media screen and (max-width: 768px) {
+    .google-login-btn {
+      padding: 12px 25px;
+      font-size: 1.2rem;
+    }
+  
+    .google-login-btn i {
+      font-size: 1.8rem;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .google-login-btn {
+      padding: 10px 15px;
+      font-size: 1rem;
+      width: 100%;  /* Full width on small screens */
+      box-sizing: border-box;
+    }
+  
+    .google-login-btn i {
+      font-size: 1.6rem;
+    }
+  }
+  

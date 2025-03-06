@@ -1,0 +1,269 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page</title>
+    <link rel="stylesheet" href="{% static 'css/checkout.css'%}">
+    <link rel="stylesheet" href="/static/css/footer.css">
+</head>
+
+<body>
+
+    <header class="checkout-header">
+        <h1>Checkout</h1>
+        <p>Your order summary and payment details</p>
+        
+        <!-- <div class="nav-buttons">
+            <a href="/cart">Back to Cart</a>
+            <a href="/order-summary">View Order Summary</a>
+        </div> -->
+    </header>
+
+    <div class="container">
+        <!-- <h1>Checkout</h1> -->
+        <form class="checkout-form">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" placeholder="Enter your full name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Delivery Address</label>
+                <textarea id="address" rows="4" placeholder="Enter your address" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="city">City</label>
+                <input type="text" id="city" list="cities" placeholder="Enter your city" required>
+                <datalist id="cities">
+                    <option value="Agra">
+                    <option value="Ahmedabad">
+                    <option value="Ambala">
+                    <option value="Amritsar">
+                    <option value="Aurangabad">
+                    <option value="Bhopal">
+                    <option value="Bhubaneswar">
+                    <option value="Bangalore">
+                    <option value="Baroda">
+                    <option value="Bareilly">
+                    <option value="Chandigarh">
+                    <option value="Chennai">
+                    <option value="Coimbatore">
+                    <option value="Delhi">
+                    <option value="Dhanbad">
+                    <option value="Faridabad">
+                    <option value="Ghaziabad">
+                    <option value="Goa">
+                    <option value="Gurgaon">
+                    <option value="Gwalior">
+                    <option value="Hyderabad">
+                    <option value="Indore">
+                    <option value="Jaipur">
+                    <option value="Jammu">
+                    <option value="Jamshedpur">
+                    <option value="Kolkata">
+                    <option value="Kochi">
+                    <option value="Kota">
+                    <option value="Lucknow">
+                    <option value="Ludhiana">
+                    <option value="Madurai">
+                    <option value="Mangalore">
+                    <option value="Meerut">
+                    <option value="Mumbai">
+                    <option value="Nagpur">
+                    <option value="Nashik">
+                    <option value="Noida">
+                    <option value="Patna">
+                    <option value="Pune">
+                    <option value="Raipur">
+                    <option value="Rajkot">
+                    <option value="Ranchi">
+                    <option value="Surat">
+                    <option value="Thane">
+                    <option value="Vadodara">
+                    <option value="Varanasi">
+                    <option value="Vijayawada">
+                    <option value="Visakhapatnam">
+                    <option value="Vellore">
+                    <!-- Adding Himachal Pradesh cities -->
+                    <option value="Shimla">
+                    <option value="Manali">
+                    <option value="Kullu">
+                    <option value="Dharamshala">
+                    <option value="Solan">
+                    <option value="Kangra">
+                    <option value="Bilaspur">
+                    <option value="Hamirpur">
+                    <option value="Mandi">
+                    <option value="Nahan">
+                    <option value="Chamba">
+                    <option value="Una">
+                    <option value="Palampur">
+                    <option value="Sundernagar">
+                    <option value="Nalagarh">
+                    <option value="Kasauli">
+                    <option value="Arki">
+                    <option value="Nahan">
+                    <option value="Baijnath">
+                    <option value="Rajgarh">
+                    <!-- Add more Himachal cities as needed -->
+                </datalist>
+            </div>
+            
+            <div class="form-group">
+                <label for="state">State</label>
+                <select id="state" required>
+                    <option value="">Select your state</option>
+                    <option value="AndhraPradesh">Andhra Pradesh</option>
+                    <option value="ArunachalPradesh">Arunachal Pradesh</option>
+                    <option value="Assam">Assam</option>
+                    <option value="Bihar">Bihar</option>
+                    <option value="Chhattisgarh">Chhattisgarh</option>
+                    <option value="Goa">Goa</option>
+                    <option value="Gujarat">Gujarat</option>
+                    <option value="Haryana">Haryana</option>
+                    <option value="HimachalPradesh">Himachal Pradesh</option>
+                    <option value="Jharkhand">Jharkhand</option>
+                    <option value="Karnataka">Karnataka</option>
+                    <option value="Kerala">Kerala</option>
+                    <option value="MadhyaPradesh">Madhya Pradesh</option>
+                    <option value="Maharashtra">Maharashtra</option>
+                    <option value="Manipur">Manipur</option>
+                    <option value="Meghalaya">Meghalaya</option>
+                    <option value="Mizoram">Mizoram</option>
+                    <option value="Nagaland">Nagaland</option>
+                    <option value="Odisha">Odisha</option>
+                    <option value="Punjab">Punjab</option>
+                    <option value="Rajasthan">Rajasthan</option>
+                    <option value="Sikkim">Sikkim</option>
+                    <option value="TamilNadu">Tamil Nadu</option>
+                    <option value="Telangana">Telangana</option>
+                    <option value="Tripura">Tripura</option>
+                    <option value="UttarPradesh">Uttar Pradesh</option>
+                    <option value="Uttarakhand">Uttarakhand</option>
+                    <option value="WestBengal">West Bengal</option>
+                    <option value="AndamanAndNicobarIslands">Andaman and Nicobar Islands</option>
+                    <option value="Chandigarh">Chandigarh</option>
+                    <option value="DadraAndNagarHaveliAndDamanAndDiu">Dadra and Nagar Haveli and Daman and Diu</option>
+                    <option value="Lakshadweep">Lakshadweep</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Puducherry">Puducherry</option>
+
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="zip">ZIP Code</label>
+                <input type="text" id="zip" placeholder="Enter your ZIP code" required>
+            </div>
+            <div class="order-summary">
+                <h2>Order Summary</h2>
+                <div class="order-summary-item">
+                    <img src="static/images/shoes1.png" alt="Product 1">
+                    <p>Item 1: ₹470.00</p>
+                </div>
+                <div class="order-summary-item">
+                    <img src="static/images/shoes10.jpg" alt="Product 2">
+                    <p>Item 2: ₹1500.00</p>
+                </div>
+                <p>Shipping: ₹50.00</p>
+                <p class="total">Total: ₹2020.00</p>
+                <div class="container">
+                    <h1>Select Payment Method</h1>
+                    <form class="payment-method">
+                        <div class="payment-option">
+                            <input type="radio" id="credit-card" name="payment" value="credit-card" required>
+                            <img src="static/images/creditcard.png" alt="Credit Card" class="payment-icon">
+                            <label for="credit-card">Credit Card</label>
+                        </div>
+                        <div class="payment-option">
+                            <input type="radio" id="debit-card" name="payment" value="debit-card">
+                            <img src="static/images/debitcard.png" alt="Debit Card" class="payment-icon">
+                            <label for="debit-card">Debit Card</label>
+                        </div>
+                        <div class="payment-option">
+                            <input type="radio" id="paypal" name="payment" value="paypal">
+                            <img src="static/images/paypal.png" alt="PayPal" class="payment-icon">
+                            <label for="paypal">PayPal</label>
+                        </div>
+                        <div class="payment-option">
+                            <input type="radio" id="cod" name="payment" value="cod">
+                            <img src="static/images/cod.png" alt="Cash on Delivery" class="payment-icon">
+                            <label for="cod">Cash on Delivery</label>
+                        </div>
+                
+                        <!-- Credit Card Details -->
+                        <div id="credit-card-details" class="payment-details" style="display:none;">
+                            <label for="card-number">Credit Card Number:</label>
+                            <input type="text" id="card-number" placeholder="Enter Card Number">
+                            <label for="expiry-date">Expiry Date:</label>
+                            <input type="text" id="expiry-date" placeholder="MM/YY">
+                            <label for="cvv">CVV:</label>
+                            <input type="text" id="cvv" placeholder="Enter CVV">
+                        </div>
+                
+                        <!-- Debit Card Details -->
+                        <div id="debit-card-details" class="payment-details" style="display:none;">
+                            <label for="debit-card-number">Debit Card Number:</label>
+                            <input type="text" id="debit-card-number" placeholder="Enter Card Number">
+                            <label for="debit-expiry-date">Expiry Date:</label>
+                            <input type="text" id="debit-expiry-date" placeholder="MM/YY">
+                            <label for="debit-cvv">CVV:</label>
+                            <input type="text" id="debit-cvv" placeholder="Enter CVV">
+                        </div>
+                
+                        <!-- PayPal Details -->
+                        <div id="paypal-details" class="payment-details" style="display:none;">
+                            <label for="paypal-email">PayPal Email:</label>
+                            <input type="email" id="paypal-email" placeholder="Enter PayPal Email">
+                            <label for="paypal-mobile-number">Paypal Mobile Number:</label>
+                            <input type="number" id="paypal-mobile-number" placeholder="Enter Mobile Number">
+                        </div>
+                    </form>
+                </div>
+
+                <script>
+                    document.addEventListener('DOMContentLoaded', function() {
+                        // Get all the radio buttons
+                        const paymentOptions = document.querySelectorAll('input[name="payment"]');
+                        
+                        // Function to reset all payment details visibility
+                        function resetPaymentDetails() {
+                            document.getElementById('credit-card-details').style.display = 'none';
+                            document.getElementById('debit-card-details').style.display = 'none';
+                            document.getElementById('paypal-details').style.display = 'none';
+                        }
+                        
+                        // Event listener for changes in payment method selection
+                        paymentOptions.forEach(function(option) {
+                            option.addEventListener('change', function() {
+                                resetPaymentDetails();
+                                
+                                // Show the relevant details based on the selected option
+                                if (document.getElementById('credit-card').checked) {
+                                    document.getElementById('credit-card-details').style.display = 'block';
+                                } else if (document.getElementById('debit-card').checked) {
+                                    document.getElementById('debit-card-details').style.display = 'block';
+                                } else if (document.getElementById('paypal').checked) {
+                                    document.getElementById('paypal-details').style.display = 'block';
+                                }
+                            });
+                        });
+                    });
+                </script>
+                
+                
+               
+        
+                        <a href="/ordersucess" class="button">Proceed to Pay</a>
+        </form>
+    </div>
+</body>
+
+</html>
+
+
